@@ -298,12 +298,11 @@ span {
     margin-inline: auto;
   }
   .leftside h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: "Kanit", sans-serif;
     font-family: "Roboto", sans-serif;
     text-transform: capitalize;
     padding-bottom: 0rem;
-    text-align: center;
   }
   .leftside p {
     font-size: 1rem;
@@ -317,7 +316,7 @@ span {
     padding-bottom: 0rem;
   }
   .leftside .btn-center button {
-    padding: 5px;
+    padding: 10px;
     border: none;
     border-radius: 10px;
     width: 100px;
@@ -916,7 +915,7 @@ footer {
 
 .price1 {
   padding: 20px;
-  background-color: aliceblue;
+  background-color: #faedcd;
   border-radius: 10px;
   text-align: center;
   position: relative;
@@ -961,7 +960,7 @@ footer {
 
 .price2 {
   padding: 20px;
-  background-color: aliceblue;
+  background-color: #fdfcdc;
   border-radius: 10px;
   text-align: center;
   position: relative;
@@ -1001,7 +1000,6 @@ footer {
 
 .price2:hover {
   top: -20px;
-  bottom: 10px;
 }
 
 @media (width <= 576px) {
@@ -1010,7 +1008,14 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     gap: 0.5rem;
+    max-width: 90%;
+    margin-inline: auto;
+  }
+  .hone {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
