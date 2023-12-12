@@ -51,7 +51,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: var(--main-bg);
-  box-shadow: var(--shadowTem);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   align-items: center;
   overflow: hidden;
   position: relative;
@@ -152,7 +152,7 @@ a:hover {
     text-decoration: none;
   }
   .icon {
-    padding: 10px;
+    padding: 5px;
   }
   #menu {
     position: absolute;
@@ -886,4 +886,131 @@ footer {
   width: 100%;
   max-width: 200px;
   background-color: yellow;
+}
+
+:root {
+  --main-bg: #ffe5d9;
+  --topBtnColor: #d90429;
+  --textColorWhite: #fff;
+  --textColorBlack: #000;
+  --shadowTem: 2px 3px 4px 5px rgba(0, 0, 0, 0.027);
+  --grayColor: #e9ecef;
+}
+
+.pri {
+  background-color: var(--grayColor);
+}
+
+.hone {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.price1 {
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.price1 ul li {
+  padding: 10px;
+  text-align: start;
+  list-style: none;
+}
+.price1 .num {
+  font-size: 5rem;
+  text-align: center;
+  color: var(--topBtnColor);
+  padding-bottom: 20px;
+}
+.price1 button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--topBtnColor);
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.price1 .bi {
+  font-size: 1rem;
+  padding-right: 10px;
+  color: var(--topBtnColor);
+  font-weight: bold;
+}
+.price1 p {
+  padding: 20px;
+}
+
+.price1:hover {
+  top: -20px;
+  bottom: 10px;
+}
+
+.price2 {
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.price2 ul li {
+  padding: 10px;
+  text-align: start;
+  list-style: none;
+}
+.price2 .num {
+  font-size: 5rem;
+  text-align: center;
+  color: #00b4d8;
+  padding-bottom: 20px;
+}
+.price2 button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fb8500;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.price2 p {
+  padding: 20px;
+}
+.price2 .bi {
+  font-size: 1rem;
+  padding-right: 10px;
+  color: #fb8500;
+  font-weight: bold;
+}
+
+.price2:hover {
+  top: -20px;
+  bottom: 10px;
+}
+
+@media (width <= 576px) {
+  .pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
